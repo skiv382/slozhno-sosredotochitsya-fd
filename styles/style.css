@@ -93,7 +93,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--color-title);
+  border: 1px solid currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -106,7 +106,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--color-title);
+  border-bottom: 1px solid currentColor;
 }
 
 .header__rec {
@@ -210,9 +210,10 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
-  padding-inline: 10px;
+  padding-inline: 20px;
+  padding-block: 60px;
   display: grid;
-  gap: 60px;
+  gap: 80px;
 }
 
 .content__grid {
@@ -257,7 +258,7 @@
 
 .item__title {
   line-height: 23.4px;
-  max-height: 24px;
+  max-height: 23.4px;
 }
 
 .item__text {
@@ -271,9 +272,7 @@
 }
 
 .content__link:hover {
-  text-shadow: 2px 2px 0 var(--accent-color);
   border-bottom: 1px solid var(--color-text);
-  cursor: pointer;
 }
 
 .content__link:focus {
@@ -282,11 +281,9 @@
 
 .content__link:focus-visible {
   outline: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
   padding-inline-start: 3px;
   padding-inline-end: 4px;
   border: 1px solid var(--color-text);
-  cursor: pointer;
 }
 
 @media (width >= 768px) {
@@ -299,9 +296,9 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (width >= 1023px) {
   .attention__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(315px, 1fr));
   }
 }
 
@@ -358,13 +355,11 @@
   grid-template-rows: 1fr;
   height: 100vh;
   min-height: 668px;
-  margin-block-start: 40px;
   padding: 10px;
 }
 
 @media (width >= 768px) {
   .footer {
-    margin-block-start: 60px;
     padding: 20px;
   }
 }
