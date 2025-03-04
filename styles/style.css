@@ -213,7 +213,7 @@
   padding-inline: 20px;
   padding-block: 60px;
   display: grid;
-  gap: 80px;
+  gap: 60px;
 }
 
 .content__grid {
