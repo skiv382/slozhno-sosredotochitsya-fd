@@ -114,7 +114,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 13px;
+  top: 15px;
   right: 20px;
   column-gap: 10px;
   text-transform: uppercase;
@@ -218,7 +218,7 @@
 
 .content__grid {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: min-content auto;
   grid-auto-columns: auto;
   grid-auto-rows: auto;
   gap: 20px;
@@ -258,7 +258,8 @@
 
 .item__title {
   line-height: 23.4px;
-  max-height: 23.4px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .item__text {
