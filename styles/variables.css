@@ -6,6 +6,7 @@
   --background-image-black: url(../images/cover-image-dark.png);
   --background-color-fallback: #000028;
   --font-family: IBM Plex mono;
+  --logo-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --accent-color: #ff0070;
   --color-content: #000028;
